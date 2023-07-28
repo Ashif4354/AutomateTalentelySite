@@ -1,0 +1,12 @@
+.SecondHeader{
+    background: #FFC113;
+}
+
+.SecondHeader p{
+    text-align: center;
+    padding: 30px;
+    color: white;
+    font-size: x-large;
+    font-style: normal;
+    font-weight: 500;
+}
