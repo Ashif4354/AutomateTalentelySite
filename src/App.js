@@ -105,9 +105,8 @@ function App() {
         <p><strong>Why Choose our Service</strong></p>
         <ul>
 
-          <li><p>We understand that your time is valuable, and success hinges on proper organization and preparation.
-            More over this is a free application.</p></li>
-          <li><p>Answering accuracy and time attendance may vary by 5%</p></li>
+          <li><p>We understand that your time is valuable, and success hinges on proper organization and preparation. So to manage that our application is the one you need, and we are the one you are looking for. Use our application and be happy</p></li>
+          <li><p>More over this is a free application.</p></li>
         </ul>
 
         <p><strong>Join our community today!</strong></p>
