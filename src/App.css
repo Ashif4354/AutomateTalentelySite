@@ -1,36 +1,44 @@
-ol{
+ol {
   text-align: center;
 }
-.btn{
+
+.btn {
   margin-bottom: 40px;
   text-align: center;
 }
 
-.btnDownload{
+.btnDownload {
   text-decoration: none;
   margin-top: 30px;
-  margin-bottom: 10px;
-  padding: 5px 15px;
+  margin-bottom: 5px;
+  padding: 6px 16px;
   font-style: normal;
+  font-weight: 500;
   font-size: 1rem;
   background-color: rgb(104, 200, 213);
-  border: 1px solid rgba(0, 0, 0, 0.247);
+  border: 0px;
   outline: none;
-  border-radius: 5px;
-}
-.listsNotes{
-  border: 1px solid black;
-  border-radius: 5px;
-  margin: 25px 30px;
-  width: 80%;
-  padding: 15px 25px;
-  margin-left: auto;
-  margin-right: auto;
+  border-radius: 18px;
+  font-family: Poppins,Roboto,"Helvetica",Arial,sans-serif;
+  cursor: pointer;
+  text-transform: none;
+  color: rgba(0, 0, 0, 0.87);;
 }
 
-.talentlyNote{
+.listsNotes {
+  border: 2px solid rgb(232, 228, 228);
+  border-radius: 30px;
+  margin: 25px 30px;
+  /* width: 80%; */
+  max-width: 1000px;
+  padding: 15px 25px;
+  margin: 0 auto;
+}
+
+.talentlyNote {
   width: 100%;
 }
+
 footer {
   margin-top: 20px;
   padding: 30px;
@@ -39,7 +47,7 @@ footer {
   text-align: center;
 }
 
-.talentlyNote p{
+.talentlyNote p {
   width: max-content;
   padding: 9px 15px;
   margin-right: auto;
@@ -48,19 +56,23 @@ footer {
   text-align: center;
 }
 
-.listsNotes li{
+.listsNotes li {
   font-style: italic;
   margin: 0px 25px;
 }
 
-.listsNotes p strong{
+.listsNotes p strong {
   font-style: normal;
   font-family: 'Poppins', sans-serif;
   font-size: medium;
   margin: 20px 0px;
 }
 
-ul{
+ul {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+p {
+  font-size: large;
 }
