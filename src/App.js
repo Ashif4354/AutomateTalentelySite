@@ -115,7 +115,7 @@ function App() {
       </div>
       <div className='btn'>
         <button className='btnDownload' onClick={() => handleClick()}>DOWNLOAD</button>
-        <p id = 'version'>version: 7.3</p>
+        <p id = 'version'>version: 7.4</p>
       </div>
     </div>
   );
