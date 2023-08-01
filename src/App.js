@@ -48,7 +48,7 @@ function App() {
       </div>
       <div className='listsNotes'>
         <p><strong>Introduction</strong></p>
-        <ul>
+        <ul className='ulFound'>
           <li><p>Are you tired of manually attending Talentely tests, and struggling to manage your busy schedule?
             Look no further! Introducing Automate Talentely, the cutting-edge solution that streamlines your test-taking experience and ensures you the completion of your tests.
           </p></li>
@@ -114,10 +114,14 @@ function App() {
           <li><p>Embark on this exciting journey with us and let's redefine success, together!</p></li>
         </ul>
       </div>
-      <div className='btn'>
+      <div className='btnbtn'>
         <button className='btnDownload' onClick={() => handleClick()}>Download</button>
         <p id='version'>version: 8.4</p>
       </div>
+      <footer>
+        <p>Built With &#128147; For Students</p>
+        <p>Developed by DG and friends</p>
+      </footer>
     </div>
   );
 }

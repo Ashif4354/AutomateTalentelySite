@@ -1,8 +1,6 @@
-ol {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins&family=REM:wght@300&display=swap');
 
-.btn {
+.btnbtn {
   margin-bottom: 40px;
   text-align: center;
 }
@@ -36,6 +34,8 @@ ol {
 }
 
 .talentlyNote {
+  font-family: 'Poppins', sans-serif;
+
   width: 100%;
 }
 
@@ -48,6 +48,7 @@ footer {
 }
 
 .talentlyNote p {
+  font-family: 'Poppins', sans-serif;
   width: max-content;
   padding: 9px 15px;
   margin-right: auto;
@@ -68,11 +69,11 @@ footer {
   margin: 20px 0px;
 }
 
-ul {
+.ulFound {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-p {
+.listsNotes p {
   font-size: large;
 }
