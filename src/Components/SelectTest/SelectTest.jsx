@@ -16,7 +16,7 @@ const SelectTest = () => {
                     for (let j = 0; j < All_tests[date].length; j++) {
 
 
-                        if (All_tests[date][j][4] == value) {
+                        if (All_tests[date][j][4] === value) {
                             tests['TESTS'].push(All_tests[date][j])
                         }
                     }
@@ -37,9 +37,7 @@ const SelectTest = () => {
             },
             body: JSON.stringify(tests)
         };
-
-        const fileName = "tests.json";
-
+        
         fetch('http://127.0.0.1:5000', requestOptions)
             .then(res => { console.log(res.text()) })
         
