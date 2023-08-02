@@ -2,6 +2,7 @@ import axios from 'axios';
 import './App.css';
 import Header from './Components/Header/Header';
 import SecondHeader from './Components/SecondHeader/SecondHeader';
+import { version_json } from './Components/VersionUpdate/VersionUpdate';
 
 function App() {
 
@@ -116,7 +117,7 @@ function App() {
       </div>
       <div className='btnbtn'>
         <button className='btnDownload' onClick={() => handleClick()}>Download</button>
-        <p id='version'>version: 8.5</p>
+        <p id='version'>version: {version_json['version']}</p>
       </div>
       <footer>
         <p>Built With &#128147; For Students</p>

@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SelectTest from './Components/SelectTest/SelectTest';
+import VersionPage from './Components/VersionUpdate/VersionUpdate';
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,11 @@ const router = createBrowserRouter([
   {
     path: '/selecttests',
     element: <SelectTest />
+  },
+
+  {
+    path: '/version', 
+    element: <VersionPage />
   }
 ])
 
