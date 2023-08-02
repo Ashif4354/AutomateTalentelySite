@@ -6,7 +6,7 @@ const Header = () => {
         <div className="header">
             {/* <div>HElolo</div> */}
             <div className="heading">
-                <p>Automate Talentely - A Talentely Completion Service</p>
+                <p>ATS - A Talentely Tests Completion Engine</p>
             </div>
         </div>
     )
