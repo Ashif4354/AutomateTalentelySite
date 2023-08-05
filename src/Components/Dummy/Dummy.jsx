@@ -10,7 +10,7 @@ const Dummy = () => {
             <p className="DummyP">You thought we'd give you the key so easily</p>
             <p className="DummyP">Find it yourself.</p>
             <br />
-            <img className="laughingatDummy" src={laughingatDummy}/>
+            <img alt="laughingatDummy" className="laughingatDummy" src={laughingatDummy}/>
         </div>
     )
 }
