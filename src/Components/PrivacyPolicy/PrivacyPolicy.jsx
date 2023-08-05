@@ -12,6 +12,11 @@ const PrivacyPolicy = () => {
             </div>
             <br />
             <Body />
+            <br />
+            <footer>
+                <p>Built With &#128147; For Students</p>
+                <p>Developed by DG and friends</p>
+            </footer>
         </div> 
     )
 }
