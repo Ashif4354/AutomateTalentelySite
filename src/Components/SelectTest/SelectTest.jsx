@@ -49,8 +49,6 @@ const SelectTest = () => {
                 })
         }
 
-
-
         
     }
 
@@ -171,7 +169,22 @@ const SelectTest = () => {
     document.body.appendChild(document.createElement('br'));
     document.body.appendChild(document.createElement('br'));
 
-    const footerElement = document.createElement('footer');
+    const btns = document.createElement("div");
+    btns.className = "btns";
+
+    const saveBtn = document.createElement("button");
+    saveBtn.className = "btn save";
+    
+    const saveBtnContent = document.createElement("p");
+    saveBtnContent.textContent = "Save";
+    saveBtn.appendChild(saveBtnContent);
+
+    btns.appendChild(saveBtn);
+    document.body.appendChild(btns);
+
+    const footerElement = document.createElement('div');
+
+    footerElement.className = "footer";
 
     // Create the paragraphs for the footer
     const paragraph1 = document.createElement('p');
@@ -185,7 +198,9 @@ const SelectTest = () => {
     footerElement.appendChild(paragraph2);
 
     // Append the footer to the body of the document
-    document.body.appendChild(footerElement); return (
+    document.body.appendChild(footerElement); 
+
+    return(
         <div>
             <h1 className="Header">SELECT TESTS</h1>
             <h3 className="note">Click save after selecting tests</h3>

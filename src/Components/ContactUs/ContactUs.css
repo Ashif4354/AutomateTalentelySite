@@ -1,0 +1,14 @@
+.contactUs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.discretePeople{
+    text-align: center;
+    font-size: x-large;
+}
+
+.strongOne{
+    font-size: large;
+}

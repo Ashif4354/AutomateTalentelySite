@@ -1,0 +1,17 @@
+.Dummy{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+}
+
+.DummyP{
+    font-size: 5rem;
+    font-weight: 600;
+}   
+
+.laughingatDummy{
+    object-fit: contain;
+    width:100%; 
+    height:450px;
+}

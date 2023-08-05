@@ -1,0 +1,13 @@
+.deepUL{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.deepULP{
+    font-size: 1.06rem;
+    font-weight: 500;margin-bottom: 6px;
+}
+
+.deepUL li p{
+    font-size: medium;
+}

@@ -48,7 +48,7 @@ function App() {
         <p>Scroll Down to Find Download Button</p>
       </div>
       <div className='listsNotes'>
-        <p><strong>Introduction</strong></p>
+        <p><strong>Introduction: </strong></p>
         <ul className='ulFound'>
           <li><p>Are you tired of manually attending Talentely tests, and struggling to manage your busy schedule?
             Look no further! Introducing ATS, the cutting-edge solution that streamlines your test-taking experience and ensures you the completion of your tests.

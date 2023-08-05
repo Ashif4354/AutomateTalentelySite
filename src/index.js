@@ -5,6 +5,10 @@ import App from './App';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SelectTest from './Components/SelectTest/SelectTest';
 import VersionPage from './Components/VersionUpdate/VersionUpdate';
+import ProblemStatement from './Components/ProblemStatement/ProblemStatement';
+import PrivacyPolicy from './Components/PrivacyPolicy/PrivacyPolicy';
+import ContactUS from './Components/ContactUs/ContactUs';
+import Dummy from './Components/Dummy/Dummy';
 
 const router = createBrowserRouter([
   {
@@ -12,7 +16,6 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <div>Error FOUND</div>
   },
-
   {
     path: '/selecttests',
     element: <SelectTest />
@@ -21,7 +24,24 @@ const router = createBrowserRouter([
   {
     path: '/version', 
     element: <VersionPage />
-  }
+  },
+  {
+    path: '/problemstatement', 
+    element: <ProblemStatement />
+  },
+  {
+    path: '/privacypolicy', 
+    element: <PrivacyPolicy />
+  },
+  {
+    path: '/contactus', 
+    element: <ContactUS />
+  },
+  {
+    path: '/youDummy', 
+    element: <Dummy />
+  },
+
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
