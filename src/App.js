@@ -51,7 +51,7 @@ function App() {
         <p><strong>Introduction</strong></p>
         <ul className='ulFound'>
           <li><p>Are you tired of manually attending Talentely tests, and struggling to manage your busy schedule?
-            Look no further! Introducing Automate Talentely, the cutting-edge solution that streamlines your test-taking experience and ensures you the completion of your tests.
+            Look no further! Introducing ATS, the cutting-edge solution that streamlines your test-taking experience and ensures you the completion of your tests.
           </p></li>
           <li><p>Just download and install it and start the application
           </p></li>
@@ -77,7 +77,7 @@ function App() {
           <li><p>Choose how much percentage of questions to be answered correctly</p></li>
           <li><p>Choose how much percentage of time to attend each test</p></li>
           <li><p>Time spent on each question is random, but total time will be same</p></li>
-          <li><p>Saves the progress of test attended y the application. so that completed tests is not attended again</p></li>
+          <li><p>Saves the progress of test attended by the application. so that completed tests is not attended again</p></li>
           <li><p>The user can also manually select which tests to be attended by the application.</p></li>
         </ul>
         <p><strong>Advantage</strong></p>
