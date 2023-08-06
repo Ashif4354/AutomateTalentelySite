@@ -9,7 +9,7 @@ const Body = () => {
                 <p className="deepHeadingP">User Registration and Information Collection:</p>
                 <ul className='ulFound'>
                     <li><p>The ATS application will allow users to register by collecting their usernames and passwords. </p></li>
-                    <li><p>Additionally, the application will gather user-provided information such as the percentage of correct answers and percentage completion time for tests.
+                    <li><p>Additionally, the application will gather user-provided information such as the percentage of correct answers and percentage of completion time for tests.
                     </p></li>
                 </ul>
                 <p className="deepHeadingP">Selective Test Participation:</p>
