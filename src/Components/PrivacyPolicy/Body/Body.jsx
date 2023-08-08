@@ -12,8 +12,10 @@ const Body = () => {
                 <li><p>The percentage you set for correct answers</p></li>
                 <li><p>The percentage you set for completion time</p></li>
                 <li><p>The version of the application you are using</p></li>
-                <li><p>The information regarding test started and finished by the application</p></li>
+                <li><p>The information regarding test started and finished by the application and your test completion status</p></li>
+                <li><p>Your PC's local time</p></li>
                 <li><p>Exceptions occured during runtime</p></li>
+                <li><p>Your Windows Resolution</p></li>
                 <br />
                 <p className="deepULP">We also get notification when someone download our application, but we do not collect information about who is downloading it.</p>
                 <p className="deepULP"><strong>Note : </strong>We do not collect your password. Your password stays with you in your local PC.</p>
@@ -22,6 +24,7 @@ const Body = () => {
             <p className="listsNotesHead">How We Use Your Information</p>
             <ul className='ulFound deepUL'>
                 <p className="deepULP">We use your information for a variety of purposes to improve our website and services.</p>
+                <p className="deepULP">Also to make sure the application works perfectly</p>
             </ul>   
             <br />
             <p className="listsNotesHead">Sharing Your Information</p>

@@ -8,7 +8,6 @@ const ProblemStatement = () => {
             <Header header="Problem Statement"/>
             <br />
             <div className='talentlyNote'>
-                <p>This privacy policy applies to the application downloaded from automatetalentely.netlify.app</p>
             </div>
             <br />
             <Body />
