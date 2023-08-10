@@ -23,8 +23,8 @@ body{
     padding: 30px 25px;
     position: absolute;
     top: 0px;
-    right: 0px;
-    width: 30%;
+    right: -35px;
+    width: 35%;
     display: flex;
     flex-direction: row;
 }
@@ -35,10 +35,11 @@ a{
     text-decoration: none;
     border-radius: 10px;
     font-weight: 500;
+    margin-right: 14px;
     text-align: left;
     color: rgba(0, 0, 0, 0.732);
     font-family: 'Poppins', sans-serif;
-    padding: 8px 18px;
+    padding: 8px 10px;
 }
 
 .menuTab:hover{

@@ -118,6 +118,7 @@ function App() {
       <div className='btnbtn'>
         <button className='btnDownload' onClick={() => handleClick()}>Download</button>
         <p id='version'>version: {version_json['version']}</p>
+        <p className = 'note'>Note: This Version works as of 10-Aug-2023 if you follow the instructions given in <strong>_README.txt</strong> file present in the installation directory after you install the app.</p>      
       </div>
       <footer>
         <p>Built With &#128147; For Students</p>
