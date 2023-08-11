@@ -7,6 +7,7 @@ const Body = () => {
             <p className="listsNotesHead">Information We Collect</p>
             <ul className='ulFound deepUL'>
                 <p className="deepULP">We collect information about you when you use our application. The information we collect may includes</p>
+                <li><p>Your PC Name</p></li>
                 <li><p>Username from your pc</p></li>
                 <li><p>Email address you use in the application</p></li>
                 <li><p>The percentage you set for correct answers</p></li>
