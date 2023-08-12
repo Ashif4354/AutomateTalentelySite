@@ -118,8 +118,9 @@ function App() {
       <div className='btnbtn'>
         <button className='btnDownload' onClick={() => handleClick()}>Download</button>
         <p id='version'>version: {version_json['version']}</p>        
+        <p className = 'note'>Run the application as <strong>Administrator</strong> always</p>
         <p className = 'note'><strong>Note</strong> : This Version works as of 11-Aug-2023 if you follow the instructions given in <strong>_README.txt</strong> file present in the installation directory after you install the app.</p>      
-        <p className = 'note'><strong>Important : This app will only work if your PC resolution is 1920 x 1080 and scale should be 100%</strong></p>
+        <p className = 'note'><strong>Important : This app works best if your PC resolution is 1920 x 1080 and scale 100%</strong></p>
       </div>
       <footer>
         <p>Built With &#128147; For Students</p>
