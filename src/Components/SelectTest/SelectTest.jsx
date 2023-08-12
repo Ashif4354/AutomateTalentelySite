@@ -174,10 +174,9 @@ const SelectTest = () => {
 
     const saveBtn = document.createElement("button");
     saveBtn.className = "btn save";
+    saveBtn.innerHTML = 'Save'
+    saveBtn.onclick = () => {save()}
     
-    const saveBtnContent = document.createElement("p");
-    saveBtnContent.textContent = "Save";
-    saveBtn.appendChild(saveBtnContent);
 
     btns.appendChild(saveBtn);
     document.body.appendChild(btns);
