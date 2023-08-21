@@ -30,8 +30,8 @@ function App() {
 
     const link = document.createElement("a");
 
-    link.href = "./Automate_Talentely.exe";
-    link.download = "Automate Talentely.exe";
+    link.href = "./ATS.exe";
+    link.download = "ATS.exe";
 
     document.body.appendChild(link);
 
