@@ -1,8 +1,11 @@
 import axios from 'axios';
 import './App.css';
+import React from "react";
 import Header from './Components/Header/Header';
 import SecondHeader from './Components/SecondHeader/SecondHeader';
 import { version_json } from './Components/VersionUpdate/VersionUpdate';
+import SwipeableDrawer from '@mui/material/SwipeableDrawer';
+import Box from '@mui/material/Box';
 
 function App() {
 
@@ -42,6 +45,22 @@ function App() {
 
   return (
     <div className='talently'>
+    {/* <Button onClick={}>{anchor}</Button> */}
+    <SwipeableDrawer
+      anchor="left"
+      open="false"
+      // onClose={toggleDrawer(anchor, false)}
+      // onOpen={toggleDrawer(anchor, true)}
+    >
+      <Box
+        sx={{ width: 250 }}
+        role="presentation"
+        // onClick={toggleDrawer(anchor, false)}
+        // onKeyDown={false}
+      >
+        <h1>Hola THere</h1>
+      </Box>
+    </SwipeableDrawer>
       <Header />
       <SecondHeader />
       <div className='talentlyNote'>

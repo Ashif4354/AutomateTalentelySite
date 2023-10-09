@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
     return(
+        <>
+        
         <div className="header">
             <div className="menu">
                 <Link to={"/problemstatement"}><p className="menuTab">Problem Statement</p></Link>
@@ -14,6 +16,7 @@ const Header = () => {
                 <p>ATS - A Talentely Tests Completion Engine</p>
             </div>
         </div>
+        </>
     )
 }
 
