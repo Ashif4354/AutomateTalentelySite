@@ -1,18 +1,15 @@
 import axios from 'axios';
 import './App.css';
 import * as React from 'react';
-import { useState } from "react";
 import Header from './Components/Header/Header';
 import SecondHeader from './Components/SecondHeader/SecondHeader';
 import { version_json } from './Components/VersionUpdate/VersionUpdate';
-import Drawer from '@mui/material/Drawer';
-import Box from '@mui/material/Box';
-import { Link } from "react-router-dom";
+
+// import ReCAPTCHA from "react-google-recaptcha";
+// import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 
 
 function App() {
-
-  const [drawer, setDrawer] = useState(false);
 
   const sendNotification = async () => {
 
@@ -48,47 +45,37 @@ function App() {
     sendNotification();
   }
 
-  const handleDrawer = (anchor) => {
-    setDrawer(!drawer);
-  }
-
-  // const toggleDrawer = (event) => {
-  //   if (event.type !== 'mousedown' || event.key !== ' ') return;
-
-  //   setDrawer(true);
-  // };
-
   return (
     <div className='talently'>
-      <Header handleDrawer={handleDrawer}/>
-    <Drawer
-      anchor={"left"}
-      open={drawer}
-      onClose={() => handleDrawer()}
-      onOpen={() => {
-        console.log('HOla opened');
-      }
-      }
-    >
-      <Box
-        sx={{ width: 250 }}
-        role="presentation"
+      <Header heading="Home"/>
+      {/* <Drawer
+        anchor={"left"}
+        open={drawer}
+        onClose={() => handleDrawer()}
+        onOpen={() => {
+          console.log('HOla opened');
+        }
+        }
       >
-        <div className="menu">
+        <Box
+          sx={{ width: 250 }}
+          role="presentation"
+        >
+          <div className="menu">
             <Link to={"/"}><p className="menuTab">Home</p></Link>
             <Link to={"/problemstatement"}><p className="menuTab">Problem Statement</p></Link>
             <Link to={"/privacypolicy"}><p className="menuTab">Privacy Policy</p></Link>
             <Link to={"/contactus"}><p className="menuTab">Contact Us</p></Link>
-        </div>
-      </Box>
-    </Drawer>
+          </div>
+        </Box>
+      </Drawer> */}
       <SecondHeader />
       <div className='talentlyNote'>
         <p>Scroll Down to Find Download Button</p>
       </div>
       <div className='listsNotes'>
         <p><strong>Introduction: </strong></p>
-        <ul className='ulFound'>
+        <ul>
           <li><p>Are you tired of manually attending Talentely tests, and struggling to manage your busy schedule?
             Look no further! Introducing ATS, the cutting-edge solution that streamlines your test-taking experience and ensures you the completion of your tests.
           </p></li>
@@ -156,15 +143,20 @@ function App() {
       </div>
       <div className='btnbtn'>
         <button className='btnDownload' onClick={() => handleClick()}>Download</button>
-        <p id='version'>version: {version_json['version']}</p>        
-        <p className = 'note'>Run the application as <strong>Administrator</strong> always</p>
-        <p className = 'note'><strong>Note</strong> : This Version works as of 11-Aug-2023 if you follow the instructions given in <strong>_README.txt</strong> file present in the installation directory after you install the app.</p>      
-        <p className = 'note'><strong>Important : This app works best if your PC resolution is 1920 x 1080 and scale 100%</strong></p>
+        <p id='version'>version: {version_json['version']}</p>
+        <p className='note1'>Run the application as <strong>Administrator</strong> always</p>
+        <p className='note1'><strong>Note</strong> : This Version works as of 11-Aug-2023 if you follow the instructions given in <strong>_README.txt</strong> file present in the installation directory after you install the app.</p>
+        <p className='note1'><strong>Important : This app works best if your PC resolution is 1920 x 1080 and scale 100%</strong></p>
+        {/* <ReCAPTCHA
+          sitekey="6LfxBI8oAAAAAIwitigqqLChJwYJnbPa2vdPzJ8c"
+          onChange={onChange}
+        /> */}
       </div>
       <footer>
         <p>Built With &#128147; For Students</p>
         <p>Developed by DG and friends</p>
       </footer>
+
     </div>
   );
 }

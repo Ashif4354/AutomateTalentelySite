@@ -13,14 +13,17 @@ body{
     outline: none;
     border: 0px solid black;
     background: rgba(0, 0, 0, 0);
+    /* background-color: yellow; */
     /* color: #ffc021; */
     font-size: x-large;
+    cursor: pointer;
 }
 .header{
     position: relative;
     /* height: 40px; */
     width: 100%;
     display: flex;
+    align-items: center;
     padding: 30px;
     background-color: rgb(255, 255, 255);
     padding: 30px 25px;
@@ -28,33 +31,46 @@ body{
 }
 
 .menu{
-    padding: 30px 25px;
     /* position: absolute;
     top: 0px;
     right: -35px;
     width: 35%; */
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 a{
     text-decoration: none;
 }
+.MenuContainer{
+    padding: 10px;
+}
 .menuTab{
     text-decoration: none;
+    padding: 30px 25px;
     border-radius: 10px;
     font-weight: 500;
-    margin-right: 14px;
+    margin-top: 14px;
     text-align: left;
     color: rgba(0, 0, 0, 0.732);
     font-family: 'Poppins', sans-serif;
     padding: 8px 10px;
 }
-
+.menuTab1{
+    text-decoration: none;
+    padding: 30px 25px;
+    border-radius: 10px;
+    /* font-weight: 500; */
+    margin-top: 14px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    padding: 8px 10px;
+}
 .menuTab:hover{
     background-color: rgba(174, 174, 174, 0.171);
     color: rgb(1, 1, 101);
 }
-
 .heading p{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;

@@ -41,8 +41,7 @@ const router = createBrowserRouter([
     path: '/youDummy', 
     element: <Dummy />
   },
-
-])
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

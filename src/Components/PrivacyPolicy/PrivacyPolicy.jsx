@@ -1,10 +1,12 @@
 import React from "react";
 import Header from "../ProblemStatement/Header/Header";
 import Body from "./Body/Body";
+import Header1 from "../Header/Header"
 
 const PrivacyPolicy = () => {
     return(
         <div>
+            <Header1 heading="Privacy Policy"/>
             <Header header="Privacy Policy" />
             <br />
             <div className='talentlyNote'>

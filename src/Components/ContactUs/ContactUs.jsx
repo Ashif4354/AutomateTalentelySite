@@ -2,11 +2,13 @@ import React from "react";
 import "./ContactUs.css";
 import Header from "../ProblemStatement/Header/Header";
 import { Link } from "react-router-dom";
+import Header1 from "../Header/Header";
 
 const ContactUS = () => {
     return(
         <div>
-            <Header header="Contact Us"/>
+            <Header1 heading="Developers" />
+            <Header header="Developers"/>
             <br />
             <br />
             <div className='listsNotes'>

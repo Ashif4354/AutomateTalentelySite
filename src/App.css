@@ -35,7 +35,6 @@
 
 .talentlyNote {
   font-family: 'Poppins', sans-serif;
-
   width: 100%;
 }
 
@@ -80,7 +79,11 @@ footer {
   /* font-size: large; */
 }
 
-.note{
+.note1{
   font-family: 'Poppins', sans-serif;
   margin-top: 10px;
+  width: 90%;
+  font-size: smaller;
+  margin-left: auto;
+  margin-right: auto;
 }
