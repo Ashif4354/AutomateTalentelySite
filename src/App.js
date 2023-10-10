@@ -52,11 +52,11 @@ function App() {
     setDrawer(!drawer);
   }
 
-  const toggleDrawer = (event) => {
-    if (event.type !== 'mousedown' || event.key !== ' ') return;
+  // const toggleDrawer = (event) => {
+  //   if (event.type !== 'mousedown' || event.key !== ' ') return;
 
-    setDrawer(true);
-  };
+  //   setDrawer(true);
+  // };
 
   return (
     <div className='talently'>
