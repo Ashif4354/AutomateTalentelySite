@@ -8,25 +8,33 @@
 body{
     background: rgb(255, 255, 255);
 }
-
+.drawerDesign{
+    /* padding: 20px 12px; */
+    outline: none;
+    border: 0px solid black;
+    background: rgba(0, 0, 0, 0);
+    /* color: #ffc021; */
+    font-size: x-large;
+}
 .header{
     position: relative;
     /* height: 40px; */
     width: 100%;
+    display: flex;
     padding: 30px;
     background-color: rgb(255, 255, 255);
     padding: 30px 25px;
-    /* justify-content: space-between; */
+    justify-content: space-between;
 }
 
 .menu{
     padding: 30px 25px;
-    position: absolute;
+    /* position: absolute;
     top: 0px;
     right: -35px;
-    width: 35%;
+    width: 35%; */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 a{
     text-decoration: none;

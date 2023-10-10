@@ -1,13 +1,18 @@
 import axios from 'axios';
 import './App.css';
-import React from "react";
+import * as React from 'react';
+import { useState } from "react";
 import Header from './Components/Header/Header';
 import SecondHeader from './Components/SecondHeader/SecondHeader';
 import { version_json } from './Components/VersionUpdate/VersionUpdate';
-import SwipeableDrawer from '@mui/material/SwipeableDrawer';
+import Drawer from '@mui/material/Drawer';
 import Box from '@mui/material/Box';
+import { Link } from "react-router-dom";
+
 
 function App() {
+
+  const [drawer, setDrawer] = useState(false);
 
   const sendNotification = async () => {
 
@@ -43,25 +48,40 @@ function App() {
     sendNotification();
   }
 
+  const handleDrawer = (anchor) => {
+    setDrawer(!drawer);
+  }
+
+  const toggleDrawer = (event) => {
+    if (event.type !== 'mousedown' || event.key !== ' ') return;
+
+    setDrawer(true);
+  };
+
   return (
     <div className='talently'>
-    {/* <Button onClick={}>{anchor}</Button> */}
-    <SwipeableDrawer
-      anchor="left"
-      open="false"
-      // onClose={toggleDrawer(anchor, false)}
-      // onOpen={toggleDrawer(anchor, true)}
+      <Header handleDrawer={handleDrawer}/>
+    <Drawer
+      anchor={"left"}
+      open={drawer}
+      onClose={() => handleDrawer()}
+      onOpen={() => {
+        console.log('HOla opened');
+      }
+      }
     >
       <Box
         sx={{ width: 250 }}
         role="presentation"
-        // onClick={toggleDrawer(anchor, false)}
-        // onKeyDown={false}
       >
-        <h1>Hola THere</h1>
+        <div className="menu">
+            <Link to={"/"}><p className="menuTab">Home</p></Link>
+            <Link to={"/problemstatement"}><p className="menuTab">Problem Statement</p></Link>
+            <Link to={"/privacypolicy"}><p className="menuTab">Privacy Policy</p></Link>
+            <Link to={"/contactus"}><p className="menuTab">Contact Us</p></Link>
+        </div>
       </Box>
-    </SwipeableDrawer>
-      <Header />
+    </Drawer>
       <SecondHeader />
       <div className='talentlyNote'>
         <p>Scroll Down to Find Download Button</p>
