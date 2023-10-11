@@ -9,6 +9,7 @@ import ProblemStatement from './Components/ProblemStatement/ProblemStatement';
 import PrivacyPolicy from './Components/PrivacyPolicy/PrivacyPolicy';
 import ContactUS from './Components/ContactUs/ContactUs';
 import Dummy from './Components/Dummy/Dummy';
+import FeedBack from './Components/FeedBack/FeedBack';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
   {
     path: '/privacypolicy', 
     element: <PrivacyPolicy />
+  },
+  {
+    path: '/feedback', 
+    element: <FeedBack />
   },
   {
     path: '/contactus', 

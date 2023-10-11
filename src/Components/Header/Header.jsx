@@ -36,6 +36,7 @@ const Header = ({ heading }) => {
                 <Link to={"/problemstatement"}><p className="menuTab">Problem Statement</p></Link>
                 <Link to={"/privacypolicy"}><p className="menuTab">Privacy Policy</p></Link>
                 <Link to={"/contactus"}><p className="menuTab">Developers</p></Link>
+                {/* <Link to={"/feedback"}><p className="menuTab">Feedback</p></Link> */}
             </div>
           </div>
         </Box>
