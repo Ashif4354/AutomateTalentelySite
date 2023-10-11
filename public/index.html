@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="ATS"
-      content="A Talentely Completion Service"
-    />
-    <meta name="google-site-verification" content="I7z0_5dO4rptOdWj7VOrZrzagA6OhvhwaVHqTjg64h4" />
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="ATS" content="A Talentely Completion Service" />
+  <meta name="google-site-verification" content="I7z0_5dO4rptOdWj7VOrZrzagA6OhvhwaVHqTjg64h4" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6347040738150367"
+    crossorigin="anonymous"></script>
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -25,14 +25,15 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Automate Talentely</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <div class="g-recaptcha" data-sitekey="6Ld_XI8oAAAAAF4eEvT3axrVpZnTxB61lOprH2RA" data-callback="onSubmit"
-        data-size="invisible">
-    </div>
-    <!--
+  <title>Automate Talentely</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <div class="g-recaptcha" data-sitekey="6Ld_XI8oAAAAAF4eEvT3axrVpZnTxB61lOprH2RA" data-callback="onSubmit"
+    data-size="invisible">
+  </div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -42,5 +43,9 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+  <script>
+    grecaptcha.execute();
+  </script>
+</body>
+
 </html>
