@@ -1,0 +1,86 @@
+.feedback{
+    background: white;
+    min-height: 100vh;
+    width: 100%;
+}
+.feedbackforminpForm{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedbackforminp{
+    width: 70%;
+    margin: 0px auto;
+}
+
+.feedbackform{
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 40px 0px;
+    border-radius: 20px;
+    border: 2px solid rgb(232, 228, 228);
+    /* margin: 20px 20px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.feedbackInp{
+    width: 70%;
+}
+.feedbackInpName{
+    /* border: 1px solid black; */
+    font-size: medium;
+    text-align: left;
+    width: 50%;
+    /* padding: 25px; */
+    outline: none;
+    background: white;
+    border-radius: 3px;
+    margin: 0% auto;
+}
+.feedbackRating{
+    width: max-content;
+    margin: 0 auto;
+}
+
+.feedbackInpContent{
+    border-radius: 3px;
+    font-size: medium;
+    width: 100% ;
+    margin: 0% auto;
+}
+
+.feedbackradio{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.feedbackSubmit{
+    width: 70%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background: rgb(104, 200, 213);
+    border: 0px solid black;
+    padding: 16px 25px;
+    border-radius: 5px;
+    font-weight: 500;
+    margin: 0% auto;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    .feedbackforminp{
+        width: 90%;
+    }
+    .feedbackInp{
+        width: 90%;
+    }
+    .feedbackSubmit{
+        width: 90%;
+    }
+}

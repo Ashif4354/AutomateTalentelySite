@@ -7,7 +7,8 @@ import SelectTest from './Components/SelectTest/SelectTest';
 import VersionPage from './Components/VersionUpdate/VersionUpdate';
 import ProblemStatement from './Components/ProblemStatement/ProblemStatement';
 import PrivacyPolicy from './Components/PrivacyPolicy/PrivacyPolicy';
-import ContactUS from './Components/ContactUs/ContactUs';
+// import ContactUS from './Components/ContactUs/ContactUs';
+import Developers from './Components/Developers/Developers';
 import Dummy from './Components/Dummy/Dummy';
 import FeedBack from './Components/FeedBack/FeedBack';
 
@@ -39,8 +40,8 @@ const router = createBrowserRouter([
     element: <FeedBack />
   },
   {
-    path: '/contactus', 
-    element: <ContactUS />
+    path: '/developers', 
+    element: <Developers />
   },
   {
     path: '/youDummy', 

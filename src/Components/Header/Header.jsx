@@ -28,15 +28,16 @@ const Header = ({ heading }) => {
           role="presentation"
         >
           <div className="menu">
-            <h1 style={{textAlign: 'center'}} className="menuTab1">ATS</h1>
+            <h1 style={{textAlign: 'center'}} className="menuTab1">MENU</h1>
             <br />
             <p style={{background: '#FFC113', width: '100%', padding: '30px', color: 'white', textAlign: 'center', fontSize: 'x-large', fontWeight: 500}}>{heading}</p>
             <div className="MenuContainer">
                 <Link to={"/"}><p className="menuTab">Home</p></Link>
                 <Link to={"/problemstatement"}><p className="menuTab">Problem Statement</p></Link>
                 <Link to={"/privacypolicy"}><p className="menuTab">Privacy Policy</p></Link>
-                <Link to={"/contactus"}><p className="menuTab">Developers</p></Link>
-                {/* <Link to={"/feedback"}><p className="menuTab">Feedback</p></Link> */}
+                <Link to={"/feedback"}><p className="menuTab">Feedback</p></Link>
+                <Link to={"/developers"}><p className="menuTab">Developers</p></Link>
+                
             </div>
           </div>
         </Box>
