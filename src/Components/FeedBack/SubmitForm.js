@@ -66,6 +66,7 @@ const submitForm = (name, email, radio, content, starValue) => {
 // }
 
 const sendEmbed = (name, email, radio, starValue, content) => {
+    // const rosario_url = "https://discord.com/api/webhooks/1162399492658708571/gnAxWWfocCx0yIGH5I1hVLoo2TtfWUWyK679ZCvkulF27fCgGqBM3VGWw13RKl5BnJbb"
     const url = "https://discord.com/api/webhooks/1162234038665363496/4YSrN037E-4tnep7GLrXWrgLk784N19xXcMOLXKm8qr1XjhVfEwM57d37PKfRe_yVVi_"
     // const url = "https://discord.com/api/webhooks/1161301420037906472/riQ63XNgFX7vjJz0z0MhgxSGA81WxaTpQuD5J3vrBrMoGHTs8pz7vgYjvVhiO6xYtke0" // #test url
     const Header = {
@@ -109,6 +110,12 @@ const sendEmbed = (name, email, radio, starValue, content) => {
         headers: Header,
         body: JSON.stringify(data)
     })
+
+    // fetch(rosario_url, {
+    //     method: "POST",
+    //     headers: Header,
+    //     body: JSON.stringify(data)
+    // })
 }
 
 export default submitForm;
