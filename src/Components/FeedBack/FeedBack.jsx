@@ -6,25 +6,25 @@ import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import TextField from '@mui/material/TextField';
 import Rating from '@mui/material/Rating';
+import { useNavigate } from "react-router-dom";
 // import Snackbar from '@mui/material/Snackbar';
 // import MuiAlert from '@mui/material/Alert';
+
 import "./Feedback.css";
 import Header from "../Header/Header";
 import SecondHeader from "../ProblemStatement/Header/Header"
 import submitForm from "./SubmitForm";
-import { useNavigate } from "react-router-dom";
 import image from "./envelop.png";
 
 const FeedBack = () => {
-
-    const navigate = useNavigate();
-
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [content, setContent] = useState("");
     const [radio, setRadio] = useState("");
     const [starValue, setStarValue] = useState("");
     const [open, setOpen] = useState(false);
+
+    const navigate = useNavigate();
 
     const handleChangeName = (e) => {
         setName(e.target.value);
