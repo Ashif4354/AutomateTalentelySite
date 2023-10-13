@@ -75,9 +75,9 @@ const FeedBack = () => {
                             aria-labelledby="demo-row-radio-buttons-group-label"
                             name="row-radio-buttons-group"
                         >
-                            <FormControlLabel value="bug-report" onClick={() => handleRadio("bug-report")} control={<Radio />} label="Bug report" />
-                            <FormControlLabel value="feature-request" onClick={() => handleRadio("feature-request")} control={<Radio />} label="Feature request" />
-                            <FormControlLabel value="general-feedback" onClick={() => handleRadio("general-feedback")} control={<Radio />} label="General FeedBack" />
+                            <FormControlLabel value="bug-report" onClick={() => handleRadio("Bug Report")} control={<Radio />} label="Bug Report" />
+                            <FormControlLabel value="feature-request" onClick={() => handleRadio("Feature Request")} control={<Radio />} label="Feature Request" />
+                            <FormControlLabel value="general-feedback" onClick={() => handleRadio("General Feedback")} control={<Radio />} label="General FeedBack" />
                         </RadioGroup>
                     </FormControl>
                 </div>
