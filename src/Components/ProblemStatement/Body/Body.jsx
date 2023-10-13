@@ -39,7 +39,7 @@ const Body = () => {
                 </ul>
                 <p className="deepHeadingP">Smooth Test Transition:</p>
                 <ul className='ulFound'>
-                    <li><p>In case a new test os initiates=d while another is in progress, ATS will automatically submit the ongoing test and seamlessly transition to the new one.</p></li>
+                    <li><p>In case a new test initiates while another is in progress, ATS will automatically submit the ongoing test and seamlessly transition to the new one.</p></li>
                 </ul>
                 <p className="deepHeadingP">Error Handling for Warnings:</p>
                 <ul className='ulFound'>

@@ -10,6 +10,16 @@
     align-items: center;
 }
 
+.feedbackformheading {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0px auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    /* color: rgb(104, 200, 213); */
+    margin-bottom: 30px;
+}
+
 .feedbackforminp{
     width: 70%;
     margin: 0px auto;
