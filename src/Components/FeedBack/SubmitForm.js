@@ -32,6 +32,8 @@ const submitForm = (name, email, radio, content, starValue) => {
     // });
 
     sendEmbed(name, email, radio, starValue, content)
+    
+    return true
 
 }
 

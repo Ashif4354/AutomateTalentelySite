@@ -40,8 +40,8 @@ const FeedBack = () => {
     }
 
     const handleSubmit = () => {
-        submitForm(name, email, radio, content, starValue);
-        setOpen(true);
+        if(submitForm(name, email, radio, content, starValue))
+            setOpen(true);
     }
 
     const Alert = React.forwardRef(function Alert(props, ref) {
