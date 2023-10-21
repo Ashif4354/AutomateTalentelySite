@@ -11,12 +11,12 @@ const SelectTest = () => {
             if (check_box.checked) {
                 let value = check_box.value
 
-                for (let date in All_tests) {
-                    for (let j = 0; j < All_tests[date].length; j++) {
+                for (let test_ in All_tests) {
+                    for (let j = 0; j < All_tests[test_].length; j++) {
 
 
-                        if (All_tests[date][j][4] === value) {
-                            tests['TESTS'].push(All_tests[date][j])
+                        if (All_tests[test_][j][4] === value) {
+                            tests['TESTS'].push(All_tests[test_][j])
                         }
                     }
                 }
@@ -78,19 +78,19 @@ const SelectTest = () => {
 
     var count = 1
 
-    for (let date in All_tests) {
+    for (let test_ in All_tests) {
         var row = document.createElement('tr');
         var cell = document.createElement('th');
 
-        cell.textContent = date
+        cell.textContent = test_.toUpperCase();
         cell.colSpan = 6;
         row.appendChild(cell);
 
         table.appendChild(row);
-        //console.log(All_tests[date])
+        //console.log(All_tests[test_])
         //break;
 
-        for (let i = 0; i < All_tests[date].length; i += 3) {
+        for (let i = 0; i < All_tests[test_].length; i += 3) {
             //console.log(test)
             let row = document.createElement('tr');
             row.classNameName = "tableRow";
@@ -99,31 +99,31 @@ const SelectTest = () => {
             let checkbox = document.createElement('input');
             checkbox.type = 'checkbox'
             checkbox.id = 'test' + count
-            checkbox.value = All_tests[date][i][4]
+            checkbox.value = All_tests[test_][i][4]
 
             cell.appendChild(checkbox)
             row.appendChild(checkbox);
 
             let cell2 = document.createElement('td');
-            cell2.textContent = All_tests[date][i][4]
+            cell2.textContent = All_tests[test_][i][4]
             row.appendChild(cell2);
 
             count++;
 
             try {
-                if (i + 1 <= All_tests[date].length) {
+                if (i + 1 <= All_tests[test_].length) {
 
                     cell = document.createElement('td');
                     checkbox = document.createElement('input');
                     checkbox.type = 'checkbox'
                     checkbox.id = 'test' + count
-                    checkbox.value = All_tests[date][i + 1][4]
+                    checkbox.value = All_tests[test_][i + 1][4]
 
                     cell.appendChild(checkbox)
                     row.appendChild(checkbox);
 
                     cell2 = document.createElement('td');
-                    cell2.textContent = All_tests[date][i + 1][4]
+                    cell2.textContent = All_tests[test_][i + 1][4]
                     row.appendChild(cell2);
 
                     count++;
@@ -135,19 +135,19 @@ const SelectTest = () => {
             }
 
             try {
-                if (i + 2 <= All_tests[date].length) {
+                if (i + 2 <= All_tests[test_].length) {
 
                     cell = document.createElement('td');
                     checkbox = document.createElement('input');
                     checkbox.type = 'checkbox'
                     checkbox.id = 'test' + count
-                    checkbox.value = All_tests[date][i + 2][4]
+                    checkbox.value = All_tests[test_][i + 2][4]
 
                     cell.appendChild(checkbox)
                     row.appendChild(checkbox);
 
                     cell2 = document.createElement('td');
-                    cell2.textContent = All_tests[date][i + 2][4]
+                    cell2.textContent = All_tests[test_][i + 2][4]
                     row.appendChild(cell2);
 
                     count++;
