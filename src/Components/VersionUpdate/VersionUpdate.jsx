@@ -1,7 +1,7 @@
 import React from "react";
 
 const version_json = {
-    'version': '9.1'
+    'version': '9.2'
 }
 
 const VersionPage = () => {
