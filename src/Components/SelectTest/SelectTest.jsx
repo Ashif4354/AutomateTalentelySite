@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.css";
-import All_tests from './tests.json'
+// import AptitudeTests from './AptitudeTests.json'
+import AptitudeTests from './CTests.json'
 
 const SelectTest = () => {
     
@@ -11,12 +12,12 @@ const SelectTest = () => {
             if (check_box.checked) {
                 let value = check_box.value
 
-                for (let test_ in All_tests) {
-                    for (let j = 0; j < All_tests[test_].length; j++) {
+                for (let test_ in AptitudeTests) {
+                    for (let j = 0; j < AptitudeTests[test_].length; j++) {
 
 
-                        if (All_tests[test_][j][4] === value) {
-                            tests['TESTS'].push(All_tests[test_][j])
+                        if (AptitudeTests[test_][j][4] === value) {
+                            tests['TESTS'].push(AptitudeTests[test_][j])
                         }
                     }
                 }
@@ -38,7 +39,7 @@ const SelectTest = () => {
         var response_confirm = window.confirm('Are you sure that you want to update your tests.\nThis will RESET your PROGRESS')
 
         if (response_confirm) {
-            fetch('http://127.0.0.1:5000', requestOptions)
+            fetch('http://127.0.0.1:2210', requestOptions)
                 .then(res => {
                     console.log(res.text());
                     alert('Tests Updated. Now you may close this window');
@@ -69,7 +70,7 @@ const SelectTest = () => {
 
 
 
-    //const keys = Object.keys(All_tests);
+    //const keys = Object.keys(AptitudeTests);
 
     //console.log(keys)
 
@@ -78,7 +79,7 @@ const SelectTest = () => {
 
     var count = 1
 
-    for (let test_ in All_tests) {
+    for (let test_ in AptitudeTests) {
         var row = document.createElement('tr');
         var cell = document.createElement('th');
 
@@ -87,10 +88,10 @@ const SelectTest = () => {
         row.appendChild(cell);
 
         table.appendChild(row);
-        //console.log(All_tests[test_])
+        //console.log(AptitudeTests[test_])
         //break;
 
-        for (let i = 0; i < All_tests[test_].length; i += 3) {
+        for (let i = 0; i < AptitudeTests[test_].length; i += 3) {
             //console.log(test)
             let row = document.createElement('tr');
             row.classNameName = "tableRow";
@@ -99,31 +100,31 @@ const SelectTest = () => {
             let checkbox = document.createElement('input');
             checkbox.type = 'checkbox'
             checkbox.id = 'test' + count
-            checkbox.value = All_tests[test_][i][4]
+            checkbox.value = AptitudeTests[test_][i][4]
 
             cell.appendChild(checkbox)
             row.appendChild(checkbox);
 
             let cell2 = document.createElement('td');
-            cell2.textContent = All_tests[test_][i][4]
+            cell2.textContent = AptitudeTests[test_][i][4]
             row.appendChild(cell2);
 
             count++;
 
             try {
-                if (i + 1 <= All_tests[test_].length) {
+                if (i + 1 <= AptitudeTests[test_].length) {
 
                     cell = document.createElement('td');
                     checkbox = document.createElement('input');
                     checkbox.type = 'checkbox'
                     checkbox.id = 'test' + count
-                    checkbox.value = All_tests[test_][i + 1][4]
+                    checkbox.value = AptitudeTests[test_][i + 1][4]
 
                     cell.appendChild(checkbox)
                     row.appendChild(checkbox);
 
                     cell2 = document.createElement('td');
-                    cell2.textContent = All_tests[test_][i + 1][4]
+                    cell2.textContent = AptitudeTests[test_][i + 1][4]
                     row.appendChild(cell2);
 
                     count++;
@@ -135,19 +136,19 @@ const SelectTest = () => {
             }
 
             try {
-                if (i + 2 <= All_tests[test_].length) {
+                if (i + 2 <= AptitudeTests[test_].length) {
 
                     cell = document.createElement('td');
                     checkbox = document.createElement('input');
                     checkbox.type = 'checkbox'
                     checkbox.id = 'test' + count
-                    checkbox.value = All_tests[test_][i + 2][4]
+                    checkbox.value = AptitudeTests[test_][i + 2][4]
 
                     cell.appendChild(checkbox)
                     row.appendChild(checkbox);
 
                     cell2 = document.createElement('td');
-                    cell2.textContent = All_tests[test_][i + 2][4]
+                    cell2.textContent = AptitudeTests[test_][i + 2][4]
                     row.appendChild(cell2);
 
                     count++;
@@ -224,7 +225,6 @@ const SelectTest = () => {
                 <button className="btn" onClick={() => selectnone()}>Select none</button><br /><br />
                 <button className="btn save" onClick={() => save()}>Save</button><br /><br />
             </div>
-
         </div>
     )
 }
