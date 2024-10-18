@@ -13,7 +13,7 @@ function App() {
 
   const sendNotification = async () => {
 
-    const url = "https://discord.com/api/webhooks/1134570835802325115/D_ZiLMitVd0BSUI9HzxEUq-CCF9ypev-MqnroBTrjc9vVyZt8XLQeMJeDDTJ9mCPFWUh";
+    const url = "";
 
     const data = {
       'embeds': [
@@ -69,7 +69,7 @@ function App() {
           </div>
         </Box>
       </Drawer> */}
-      <SecondHeader />
+      <SecondHeader title="Pass your tests with confidence. We'll take the stress out of test-taking. With great power comes great responsibility"/>
       <div className='talentlyNote'>
         <p>Scroll Down to Find Download Button</p>
       </div>

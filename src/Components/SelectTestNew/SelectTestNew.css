@@ -1,0 +1,65 @@
+.dialog{
+    width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.dialogHead{
+    padding: 25px 10px 2px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dialogNote{
+    font-size: 1rem;
+    color: rgb(68, 68, 68);
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.lists_of_tests{
+    text-align: center;
+}
+
+.dialog_test{
+    margin-top: 5px;
+}
+
+.tests_Container{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-around;
+    align-items: stretch;
+    max-height: 40vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.dialogBtn{
+    padding: 12px 25px;
+    /* margin-right: 6px; */
+    border-radius: 30px;
+    font-size: .9rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.lists_of_tests_head{
+    font-size: 1.4rem;
+    padding: 18px 0px;
+    width: 500px;
+    margin-bottom: 10px;
+    background-color: #FFC113;
+    color: white;
+}
+
+.submitbtn{
+    background-color: rgb(104, 200, 213);
+}
+
+.editBtn{
+    color: black;
+}

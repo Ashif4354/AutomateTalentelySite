@@ -127,8 +127,9 @@ h3 {
   font-size: x-small;
   font-weight:300;
   padding: 10px 28px;
-  border-radius: 20px;
-  font-size: 0.8rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -142,8 +143,8 @@ h3 {
   background-color: rgb(104, 200, 213);
   font-family: 'Poppins', sans-serif;
   color: black;
-  font-weight: 300;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .footer {

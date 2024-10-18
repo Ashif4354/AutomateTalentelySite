@@ -11,6 +11,7 @@ import PrivacyPolicy from './Components/PrivacyPolicy/PrivacyPolicy';
 import Developers from './Components/Developers/Developers';
 import Dummy from './Components/Dummy/Dummy';
 import FeedBack from './Components/FeedBack/FeedBack';
+import SelectTestNew from './Components/SelectTestNew/SelectTestNew';
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
   {
     path: '/youDummy', 
     element: <Dummy />
+  },
+  {
+    path: '/SelectTestNew', 
+    element: <SelectTestNew />
   },
 ]);
 
